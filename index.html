@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mara Martínez | Desarrolladora </title>
+    <meta name="description"
+        content="Portfolio de Mara Martínez, desarrolladora de software multiplataforma y web. Experta en Python, Java, C y bases de datos. Diseño y desarrollo soluciones escalables, eficientes y modernas.">
+    <meta name="keywords"
+        content="Mara Martínez, 42 Madrid, desarrolladora de software, programadora, Python, Java, bases de datos, SQL, desarrollo web, aplicaciones multiplataforma, software escalable, soluciones tecnológicas">
+    <meta name="author" content="Mara Martínez">
+    <meta property="og:title" content="Mara Martínez | Desarrolladora de Software Multiplataforma">
+    <meta property="og:description"
+        content="Desarrollo de aplicaciones modernas, seguras y escalables con Python, Java y bases de datos. Conoce mis proyectos y experiencia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maramartinez.dev/">
+    <meta property="og:image" content="https://maramartinez.dev/img/preview.png">
+    <link rel="canonical" href="https://maramartinez.dev/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mara Martínez | Desarrolladora de Software Multiplataforma">
+    <meta name="twitter:description"
+        content="Portfolio profesional. Descubre mis habilidades en desarrollo de software, programación y gestión de bases de datos.">
+    <meta name="twitter:image" content="https://maramartinez.dev/img/preview.png">
+
+    <meta name="author" content="Mara Martínez">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Custom Scripts JS -->
+    <script src="scripts/scripts.js" defer></script>
+</head>
+
+<body>
+    <script>
+        <!-- Script to close offcanvas when a nav link is clicked -->
+        document.addEventListener('DOMContentLoaded', () => {
+            const offcanvasElement = document.getElementById('offcanvasNavbar');
+            const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+            const navLinks = offcanvasElement.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    offcanvas.hide();
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Bloquear Ctrl+C, Ctrl+X, Ctrl+V
+            document.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && ['c', 'x', 'v', 'a'].includes(e.key.toLowerCase())) {
+                    e.preventDefault();
+                }
+            });
+
+            // Bloquear clic derecho
+            document.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+            });
+
+            // Bloquear selección de texto
+            document.addEventListener('selectstart', (e) => {
+                e.preventDefault();
+            });
+        });
+    </script>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container d-flex justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <i class="fa-regular fa-square-caret-down"></i>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mara Martínez</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#skills">Tecnologías</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#aboutme">Sobre mí</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+                            <!--<li class="nav-item"><a class="nav-link" href="#">Proyectos</a></li>-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="files/Tamara Martinez Vargas CV.pdf"
+                                    download="CV-Mara-Martinez.pdf">
+                                    Descargar CV
+                                </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#contactar">Contáctame</a></li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto d-flex flex-row">
+                            <li class="nav-item me-1"><a class="nav-link" href="https://github.com/maramartinezvargas"
+                                    target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                            <li class="nav-item me-1"><a class="nav-link"
+                                    href="https://www.linkedin.com/in/tamaramartinezvargas/" target="_blank"><i
+                                        class="fab fa-linkedin fa-lg"></i></a></li>
+                            <li class="nav-item me-1"><a class="nav-link"
+                                    href="mailto:tamara.martinez.vargas@gmail.com"><i
+                                        class="fas fa-envelope fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+
+    <main>
+        <!-- ENCABEZADO-->
+        <section id="encabezado" class="mt-5 py-4">
+
+            <div class="container">
+                <div class="row">
+                    <div class=" col-5 col-md-4 col-sm-4 col-lg-3 col d-flex justify-content-center">
+                        <img class="img-fluid imagen-perfil" alt="Mara Martínez" src="img/mara2.png">
+                    </div>
+                    <div class="col-7 col-md-8 col-sm-8 col-lg-9 d-flex flex-column align-items-bottom">
+                        <h1>Mara Martínez</h1>
+                        <h5>Desarrolladora de Software.</h5>
+                        <div class="skill-item mt-1 justify-content-start align-items-left">
+                            <span class="badge bg-badge-work p-3 d-inline-flex ">
+                                <i class="fa-solid fa-briefcase fa-lg me-2"></i>
+                                <a class="mb-0 text-decoration-none text-reset"
+                                    href="mailto:tamara.martinez.vargas@gmail.com?subject=Oportunidad%20laboral">
+                                    Open to work
+                                </a>
+                            </span>
+                        </div>
+                        <p class="my-3">tamara.martinez.vargas@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGÍAS-->
+        <section id="skills" class="justify-content-left">
+            <div class="container">
+                <h2 class="me-2 titulo-seccion"><!--<i class="fa-solid fa-briefcase me-2"></i>-->
+                    Tecnologías</h2>
+                <div class="row justify-content-left">
+                    <div class="col-md-12">
+                        <div class="d-flex flex-wrap justify-content-left">
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-brands fa-python fa-1x me-2"></i>
+                                    <p class="mb-0">Python</p>
+                                </span>
+                            </div>
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-brands fa-java fa-1x me-2"></i>
+                                    <p class="mb-0">Java</p>
+                                </span>
+                            </div>
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-brands fa-php fa-1x me-2"></i>
+                                    <p class="mb-0">PHP</p>
+                                </span>
+                            </div>
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-solid fa-code fa-1x me-1"></i>
+                                    <p class="mb-0">C</p>
+                                </span>
+                            </div>
+                            <!-- .Net-->
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-brands fa-microsoft fa-1x me-2"></i>
+                                    <p class="mb-0">.Net</p>
+                                </span>
+                            </div>
+                            <!-- C# -->
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-brands fa-microsoft fa-1x me-2"></i>
+                                    <p class="mb-0">C#</p>
+                                </span>
+                            </div>
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-solid fa-database fa-1x me-2"></i>
+                                    <p class="mb-0">SQL Server</p>
+                                </span>
+                            </div>
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-solid fa-database fa-1x me-2"></i>
+                                    <p class="mb-0">MySQL</p>
+                                </span>
+                            </div>
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-solid fa-database fa-1x me-2"></i>
+                                    <p class="mb-0">PostgreSQL</p>
+                                </span>
+                            </div>
+                            <!-- SQLLite-->
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-solid fa-database fa-1x me-2"></i>
+                                    <p class="mb-0">SQLite</p>
+                                </span>
+                            </div>
+                            <!-- MongoDB-->
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-solid fa-database fa-1x me-2"></i>
+                                    <p class="mb-0">MongoDB</p>
+                                </span>
+                            </div>
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-brands fa-git-alt fa-1x me-2"></i>
+                                    <p class="texto-badge mb-0">Git / GitHub</p>
+                                </span>
+                            </div>
+
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-brands fa-html5 fa-1x me-2"></i>
+                                    <p class="mb-0">HTML5</p>
+                                </span>
+                            </div>
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-brands fa-css3-alt fa-1x me-2"></i>
+                                    <p class="mb-0">CSS3</p>
+                                </span>
+                            </div>
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-brands fa-js fa-1x me-1"></i>
+                                    <p class="mb-0">JavaScript</p>
+                                </span>
+                            </div>
+                            <div class="skill-item me-1 mb-2 text-center">
+                                <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                    <i class="fa-brands fa-bootstrap fa-1x me-2 my-1"></i>
+                                    <p class="mb-0">Bootstrap</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Experiencia -->
+        <section id="experiencia" class="me-2 titulo-seccion justify-content-left">
+            <div class="container">
+                <h2 class="me-2 titulo-seccion">Experiencia</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h5>2014 – 2024</h5>
+                            <h4><strong>Especialista en Soporte Técnico</strong></h4>
+                            <h6>Konecta SAT y Konecta BTO, Alcobendas (Madrid)</h6>
+
+                            <p>Durante mi experiencia en el <strong>Centro de Atención al Usuario (CAU)</strong>, me
+                                encargué de resolver <strong>problemas técnicos críticos</strong>, asegurando la
+                                <strong>continuidad operativa</strong>. Proporcioné <strong>soporte técnico
+                                    especializado</strong> a clientes como <strong>Vodafone</strong>, <strong>Banco
+                                    Mediolanum</strong> y <strong>Samsung</strong>, gestionando <strong>incidencias
+                                    complejas</strong> en plataformas <strong>Windows</strong>, <strong>Android</strong>
+                                e <strong>iOS</strong>. Además, optimicé <strong>procesos de soporte</strong>, logrando
+                                mejoras en la <strong>eficiencia</strong> y <strong>satisfacción del cliente</strong>.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                                <img class="company-logo img-fluid mb-3" alt="Konecta" src="img/Konecta.svg"
+                                    style="max-width: 150px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h5>2012 – 2014</h5>
+                            <h4><strong>Desarrolladora de Software Junior</strong><br></h4>
+                            <h6>Altran Technologies (Capgemini Engineering), Madrid.<br></h6>
+                            <p>Durante mi experiencia en el desarrollo y mantenimiento de la aplicación “Ulyses” para
+                                <strong>Vitaldent</strong>, optimicé y migré bases de datos <strong>SQL Server</strong>
+                                hacia un sistema centralizado, diseñé consultas avanzadas y procedimientos almacenados
+                                para mejorar el rendimiento, y resolví incidencias críticas utilizando herramientas de
+                                ticketing. Además, aseguré la <strong>escalabilidad</strong> y
+                                <strong>eficiencia</strong> de la infraestructura, contribuyendo significativamente al
+                                éxito del proyecto.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                                <img class="company-logo img-fluid mb-3" alt="Altran, Part of Capgemini"
+                                    src="img/Altran-Capgemini.svg" style="max-width: 150px;">
+                                <img class="company-logo img-fluid ps-4" alt="Vitaldent" src="img/Vitaldent.svg"
+                                    style="max-width: 200px;">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ nuevo -->
+        <section id="aboutme" class="pb-5">
+            <div class="container">
+                <div class="row d-flex flex-wrap align-items-center">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <img class="img-fluid frase" alt="Mara Martínez" src="img/frase_juguetes.svg">
+                    </div>
+                    <!-- Sección de Imágenes -->
+                    <div
+                        class="col-12 col-md-12 col-lg-6 d-flex justify-content-center justify-content-md-center mb-3 mb-md-0">
+                        <img class="img-fluid img-2" alt="Mara Martínez" src="img/mara2.svg">
+                        <img class="img-fluid img-1" alt="Mara Martínez" src="img/mara1.svg">
+                    </div>
+                    <!-- Sección de Texto con un máximo de la mitad del ancho en md -->
+                    <div class="col-12 col-md-12 col-lg-6 text-start aboutme-container ps-4 pe-4">
+                        <h1 class="titulo-seccion">Sobre mí</h1>
+                        <p>Con <strong>más de 10 años de experiencia en soporte técnico</strong> y <strong>más de 2 años
+                                como desarrolladora backend</strong>, me especializo en el <strong>desarrollo de
+                                aplicaciones multiplataforma</strong> y la <strong>gestión de bases de datos
+                                SQL</strong>. </p>
+                        <p>Combino <strong>programación, bases de datos y resolución de incidencias</strong> para crear
+                            <strong>soluciones escalables y eficientes</strong>.
+                        </p>
+                        <p>Desde bien pequeña (casi como en las fotos que ves) supe que la informática era mi mundo. Aún
+                            recuerdo cuando mi hermana mayor me enseñó a escribir un simple <strong>"Hola, mundo" en
+                                HTML</strong> con Dreamweaver, en una época en la que <strong>tener ordenador en casa no
+                                era tan habitual</strong>. Ese momento despertó en mí el <strong>interés por la
+                                tecnología, especialmente por la programación</strong>.</p>
+                        <div class="skill-item mt-2">
+                            <span class="badge bg-badge-work p-3 d-inline-flex align-items-center">
+                                <i class="fa-solid fa-briefcase fa-lg me-2"></i>
+                                <a class="mb-0 text-decoration-none text-reset"
+                                    href="mailto:tamara.martinez.vargas@gmail.com?subject=Oportunidad%20laboral">
+                                    ¿Hablamos de nuevas oportunidades?
+                                </a>
+                            </span>
+                        </div>
+                        <p class="my-3">tamara.martinez.vargas@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMACIÓN -->
+        <section id="formacion" class="py-5 justify-content-left">
+            <div class="container">
+                <h2 class="me-2 titulo-seccion""><i class=" fa-solid fa-graduation-cap me-2"></i>Formación</h2>
+                <div class="timeline">
+                    <div class="timeline-item2">
+                        <div class="timeline-dot2"></div>
+                        <div class="timeline-content">
+                            <h5>Julio 2025 - Actualidad</h5>
+                            <h4><strong>42 Madrid | Fundación Telefónica</strong></h4>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                                <img class="company-logo img-fluid mt-2 mb-3" alt="42 Madrid" src="img/42.svg"
+                                    style="max-width: 220px;">
+                            </div>
+                            <p><strong>Ingenieria de Software de <a class="link"
+                                        href="https://www.42network.org/about-us/" target="_blank"
+                                        rel="noopener noreferrer">42 Network</a>, en colaboración con <a class="link"
+                                        href="https://fundaciontelefonica.com/campus-42/" target="_blank"
+                                        rel="noopener noreferrer">Fundación Telefónica, Madrid</a></strong>
+                                <br>Admitida como estudiante de 42 Madrid tras superar la Piscine: proceso de selección
+                                intensivo de 26 días entre más de 220 aspirantes, centrado en programación en C, Shell
+                                Scripting y resolución de problemas complejos.
+                                <br><br>El Cursus de 42 está basado en proyectos prácticos y el aprendizaje autónomo y
+                                colaboración peer-to-peer.
+                                <br><br>Experiencia en desarrollo de algoritmos y estructuras de datos, scripting con
+                                Bash, uso avanzado de Linux y fundamentos de buenas prácticas en programación. El modelo
+                                42 potencia habilidades técnicas y competencias clave como resolución de problemas,
+                                trabajo en equipo, autonomía y pensamiento crítico.
+                            </p>
+                            <div class="row justify-content-left">
+                                <div class="col-md-12">
+                                    <div class="d-flex flex-wrap justify-content-left">
+
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <!-- C -->
+                                                <i class="fa-solid fa-code fa-1x me-2"></i>
+                                                <p class="mb-0">C</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!-- C++ -->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-code fa-1x me-2"></i>
+                                                <p class="mb-0">C++</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!--Shell Scripting-->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-brands fa-linux fa-1x me-2"></i>
+                                                <p class="mb-0">Shell Scripting</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!--Git / Git hub-->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-brands fa-git-alt fa-1x me-2"></i>
+                                                <p class="texto-badge mb-0">Git / GitHub</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-2 mb-2 text-center">
+                                            <!--Linux-->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-brands fa-linux fa-1x me-2"></i>
+                                                <p class="mb-0">Linux</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-2 mb-2 text-center">
+                                            <!--Algoritmos y Estructuras de Datos-->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-database fa-1x me-2"></i>
+                                                <p class="mb-0">Algoritmos y Estructuras de Datos</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-2 mb-2 text-center">
+                                            <!--Trabajo en equipo-->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-users fa-1x me-2"></i>
+                                                <p class="mb-0">Trabajo en equipo</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-2 mb-2 text-center">
+                                            <!--Pensamiento crítico-->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-brain fa-1x me-2"></i>
+                                                <p class="mb-0">Pensamiento crítico</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-2 mb-2 text-center">
+                                            <!--Resolución de problemas-->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-lightbulb fa-1x me-2"></i>
+                                                <p class="mb-0">Resolución de problemas</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-item2">
+
+                        <div class="timeline-dot2"></div>
+                        <div class="timeline-content">
+                            <h5>Septiembre 2024 – Actualidad</h5>
+                            <h4><strong>Grado Superior en Desarrollo de Aplicaciones Multiplataformas</strong></h4>
+                            <p><strong>Campus FP, Alcalá de Henares (Madrid)</strong></p>
+                            </p>
+                            <p>
+                                <br>Prácticas académicas al final del primer curso, en colaboración con
+                                <a class="link" href="https://www.seidor.com/es-es" target="_blank"
+                                    rel="noopener noreferrer"><strong>Seidor Tech</strong>
+                                </a>.
+                                <br>
+                                Durante estas prácticas, se realizó el desarrollo de una aplicación de gestión de
+                                inventario de producto y clientes para
+                                una tienda utilizando <strong>Java</strong> y <strong>Swing</strong>, aplicando
+                                conceptos aprendidos en el curso como POO, manejo de bases de datos con
+                                <strong>MySQL</strong> y diseño de interfaces gráficas.
+                            </p>
+                            <div class="row justify-content-left mt-3">
+                                <div class="col-md-12">
+                                    <div class="d-flex flex-wrap justify-content-left">
+
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <!-- Java -->
+                                                <i class="fa-brands fa-java fa-1x me-2"></i>
+                                                <p class="mb-0">Java</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!-- Swing -->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-brands fa-java fa-1x me-2"></i>
+                                                <p class="mb-0">Swing</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!--PHP-->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-brands fa-php fa-1x me-2"></i>
+                                                <p class="texto-badge mb-0">PHP</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!-- Python -->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-brands fa-python fa-1x me-2"></i>
+                                                <p class="mb-0">Python</p>
+                                            </span>
+                                        </div>
+                                        <!-- .Net-->
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-brands fa-microsoft fa-1x me-2"></i>
+                                                <p class="mb-0">.Net</p>
+                                            </span>
+                                        </div>
+                                        <!-- C# -->
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-brands fa-microsoft fa-1x me-2"></i>
+                                                <p class="mb-0">C#</p>
+                                            </span>
+                                        </div>
+
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!-- SQL -->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-database fa-1x me-2"></i>
+                                                <p class="mb-0">SQL</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!-- MySQL -->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-database fa-1x me-2"></i>
+                                                <p class="mb-0">MySQL</p>
+                                            </span>
+                                        </div>
+                                        <!-- PostgreSQL -->
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-database fa-1x me-2"></i>
+                                                <p class="mb-0">PostgreSQL</p>
+                                            </span>
+                                        </div>
+
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!-- Kotlin -->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="devicon-kotlin-plain me-2" style="color: #fcfcfc;"></i>
+                                                <p class="mb-0">Kotlin</p>
+                                            </span>
+                                        </div>
+                                        <!-- Android -->
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="devicon-android-plain me-2" style="color: #fcfcfc;"></i>
+                                                <p class="mb-0">Android</p>
+                                            </span>
+                                        </div>
+                                        <!-- -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item2">
+                        <div class="timeline-dot2"></div>
+                        <div class="timeline-content">
+                            <h5>2012</h5>
+                            <h4><strong>Grado Superior en Desarrollo de Aplicaciones Informáticas</strong></h4>
+                            <p><strong>IES Virgen de la Paz, Alcobendas (Madrid)</strong>
+                                <br> Prácticas formativas en <strong>Altran Technologies</strong>(actual <a class="link"
+                                    href="https://www.capgemini.com/es-es/" target="_blank"><strong>Capgemini
+                                        Engineering</strong></a>), Madrid.
+                                Lo que dió lugar posteriormente a una oferta laboral, que acepté y durante 2 años
+                                trabajé como desarrolladora de software en proyectos de innovación tecnológica.
+                            </p>
+                            <div class="row justify-content-left mt-3">
+                                <div class="col-md-12">
+                                    <div class="d-flex flex-wrap justify-content-left">
+                                        <!-- C -->
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-code fa-1x me-2"></i>
+                                                <p class="mb-0">C</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!-- SQL Server -->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-database fa-1x me-2"></i>
+                                                <p class="mb-0">SQL Server</p>
+                                            </span>
+                                        </div>
+                                        <div class="skill-item me-1 mb-2 text-center">
+                                            <!-- SQL -->
+                                            <span class="badge bg-badge p-3 d-inline-flex align-items-center">
+                                                <i class="fa-solid fa-database fa-1x me-2"></i>
+                                                <p class="mb-0">SQL</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--PRUEBA-->
+        <!-- Sección de Contacto -->
+        <section id="contactar" class="contact-section py-5 text-center">
+            <div class="container">
+                <h2 class="section-title">¡Contáctame!</h2>
+                <p class="lead mb-2">Si tienes alguna pregunta o simplemente quieres conectar, ¡no dudes en hacerlo!</p>
+
+                <div class="social-icons">
+                    <ul class="navbar-nav ms-auto d-flex flex-row justify-content-center">
+                        <li class="nav-item px-2"><a class="nav-link" href="https://github.com/maramartinezvargas"
+                                target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                        <li class="nav-item px-2"><a class="nav-link"
+                                href="https://www.linkedin.com/in/tamaramartinezvargas" target="_blank"><i
+                                    class="fab fa-linkedin fa-lg"></i></a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="mailto:tamara.martinez.vargas@gmail.com"><i
+                                    class="fas fa-envelope fa-lg"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="contact-info">
+                    <a class="link email" href="mailto:tamara.martinez.vargas@gmail.com">
+                        <strong>tamara.martinez.vargas@gmail.com</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="formulario-contacto" class="pt-0 pb-3 px-2 justify-content-center"> <!-- antes pb-4 -->
+            <div class="container">
+                <form action="https://formspree.io/f/mjkpbbaz" method="POST" class="row g-3">
+                    <div class="col-md-6 mt-1">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Dime cómo te llamas"
+                            required>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="¿A qué correo electrónico respondo?" required>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <label for="subject" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="subject" name="subject"
+                            placeholder="Asunto del mensaje" required>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="5"
+                            placeholder="Aquí puedes comentarme lo que desees" required></textarea>
+                    </div>
+                    <div class="col-12 text-center mt-2">
+                        <button type="submit" class="btn btn-enviar">Enviar mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-5">
+        <p>&copy;2025 Made with ♥ by Mara Martínez</p>
+    </footer>
+</body>
+
+</html>
