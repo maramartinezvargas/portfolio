@@ -80,6 +80,10 @@ a.link:hover {
   background-color: #fcfcfc;
 }
 
+#experiencia{
+  padding-top: 35px;
+}
+
 #experiencia,
 #contactar {
   color: #535353;
@@ -89,9 +93,9 @@ a.link:hover {
   background-color: #fcfcfc;
 }
 
-.titulo-seccion {
+/* .titulo-seccion {
   padding-top: 15px;
-}
+} */
 
 /* NAVBAR **************************** */
 .navbar {
