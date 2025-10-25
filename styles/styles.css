@@ -257,14 +257,12 @@ a.link:hover {
   align-items: center;
   background-color: #d2acda !important;
   color: #f5f5f5 !important;
-  transition: background-color 1s ease, color 1s ease, transform 1s ease;
+  transition: background-color 0.7s ease, color 0.7s ease, transform 0.7s ease;
 }
 
 .bg-badge-work:hover {
-
-  background-color: #f8e5cd !important;
-  color: #535353 !important;
-  transition: background-color 1s ease, color 1s ease, transform 1s ease;
+  background-color: #95c8c6 !important;
+  transition: background-color 0.7s ease, color 0.7s ease, transform 0.7s ease;
 }
 
 .devicon-kotlin-plain {
