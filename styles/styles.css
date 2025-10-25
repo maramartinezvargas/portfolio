@@ -73,6 +73,7 @@ a.link:hover {
 
 /* SECCIONES **************************** */
 #encabezado {
+  padding-top: 50px;
   background-color: #fcfcfc;
 }
 
@@ -119,15 +120,21 @@ a.link:hover {
   /* Para que los elementos queden en columna */
 }
 
+.nav-link {
+  color: #535353;
+  transition: color 0.8s ease, transform 0.8s ease;
+}
+
 .nav-link:hover {
 
   color: #C7CB85;
-  transition: background-color 0.8s ease, transform 0.8s ease;
+  transition: color 0.8s ease, transform 0.8s ease;
 }
 
 .navbar-toggler {
   border: none;
 }
+
 
 .offcanvas,
 .offcanvas-title {
@@ -269,7 +276,7 @@ a.link:hover {
   color: #fcfcfc !important;
 }
 
-/*SOBRE MI nuevo*/
+/*SOBRE MI*/
 
 .img-1 {
   margin-top: 50px;
