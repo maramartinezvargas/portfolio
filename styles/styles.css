@@ -7,12 +7,10 @@ body {
   color: #535353;
 }
 
-/* Ajuste para el desplazamiento al comienzo de la página, y asegurar que el contenido no quede oculto detrás del nav */
 html {
   scroll-padding-top: 55px;
 }
 
-/* Estilo de selección de texto */
 ::selection,
 ::moz-selection {
   background-color: #d2acda;
@@ -259,8 +257,8 @@ a.link:hover {
   border-radius: 50%;
   background-color: #dfdfdf;
   background-image: url('../img/mara.svg');
-  background-size: cover;      /* llena todo el círculo */
-  background-position: center; /* centra la imagen */
+  background-size: cover;     
+  background-position: center; 
   background-repeat: no-repeat;
   transition: background-color 0.8s ease, transform 0.8s ease;
 }
@@ -296,7 +294,6 @@ a.link:hover {
   background-color: #efe9e1;
   border-radius: 50%;
   object-fit: cover;
-  /* Cambio de scale-down a cover */
   transform: scale(1);
   transition: background-color 0.8s ease, transform 0.8s ease;
   max-width: 100%;
@@ -488,14 +485,11 @@ fa {
   color: #F5F5F5;
 }
 
-/* Estilo para el placeholder */
 input::placeholder,
 textarea::placeholder {
   font-size: 14px;
-  /* Ajusta el tamaño a lo que prefieras */
   font-family: Hind Madurai;
   color: #c4c4c4 !important;
-  /* Opcional: Cambiar el color del placeholder */
 }
 
 .email {
@@ -504,7 +498,7 @@ textarea::placeholder {
 }
 
 #formulario-contacto {
-  margin-top: -10px; /* ajusta según necesites */
+  margin-top: -10px;
 }
 
 
