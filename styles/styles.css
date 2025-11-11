@@ -66,9 +66,6 @@ a.link:hover {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-
-
-
 /* SECCIONES **************************** */
 #encabezado {
   background-color: #fcfcfc;
@@ -78,7 +75,7 @@ a.link:hover {
   background-color: #fcfcfc;
 }
 
-#experiencia{
+#experiencia {
   padding-top: 35px;
 }
 
@@ -91,14 +88,22 @@ a.link:hover {
   background-color: #fcfcfc;
 }
 
-.mw-150 { max-width: 150px; }
-.mw-200 { max-width: 200px; }
-.mw-220 { max-width: 220px; }
+.mw-150 {
+  max-width: 150px;
+}
 
-.devicon-kotlin-plain, 
+.mw-200 {
+  max-width: 200px;
+}
+
+.mw-220 {
+  max-width: 220px;
+}
+
+.devicon-kotlin-plain,
 .devicon-android-plain {
-    color: #fcfcfc;
-} 
+  color: #fcfcfc;
+}
 
 
 /* .titulo-seccion {
@@ -257,8 +262,8 @@ a.link:hover {
   border-radius: 50%;
   background-color: #dfdfdf;
   background-image: url('../img/mara.svg');
-  background-size: cover;     
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   transition: background-color 0.8s ease, transform 0.8s ease;
 }
