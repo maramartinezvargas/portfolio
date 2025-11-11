@@ -93,6 +93,16 @@ a.link:hover {
   background-color: #fcfcfc;
 }
 
+.mw-150 { max-width: 150px; }
+.mw-200 { max-width: 200px; }
+.mw-220 { max-width: 220px; }
+
+.devicon-kotlin-plain, 
+.devicon-android-plain {
+    color: #fcfcfc;
+} 
+
+
 /* .titulo-seccion {
   padding-top: 15px;
 } */
