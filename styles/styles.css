@@ -293,10 +293,14 @@ a.link:hover {
 
 /*SOBRE MI*/
 
-.img-1 {
-  margin-top: 50px;
-  margin-left: -60px;
-  background-color: #efe9e1;
+.img-2 {
+  /* margin-top: 50px;
+  margin-left: -40px; */
+  margin-top: 0px;
+  margin-left: 50px;
+  margin-right: -85px;
+  background-color: #95c8c6;
+
   border-radius: 50%;
   object-fit: cover;
   transform: scale(1);
@@ -306,16 +310,19 @@ a.link:hover {
   min-width: 230px;
 }
 
-.img-1:hover {
+.img-2:hover {
   transform: scale(1.10);
   background-color: #f8e5cd;
   transition: background-color 0.8s ease, transform 0.8s ease;
 }
 
-.img-2 {
-  margin-top: 170px;
-  margin-left: 35px;
-  background-color: #95c8c6;
+.img-1 {
+  /* margin-top: 170px;
+  margin-left: 35px; */
+  margin-top: 150px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: #efe9e1;
   border-radius: 50%;
   object-fit: cover;
   /* Cambio de scale-down a cover */
@@ -333,7 +340,7 @@ a.link:hover {
   min-width: 320px;
 }
 
-.img-2:hover {
+.img-1:hover {
   transform: scale(1.05);
   background-color: #a6dfdd;
   transition: background-color 0.8s ease, transform 0.8s ease;
